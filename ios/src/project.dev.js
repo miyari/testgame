@@ -796,6 +796,14 @@ window.__require = function e(t, n, r) {
         _this.testSprite = null;
         return _this;
       }
+      NewClass.prototype.onLoad = function() {
+        window.SETTINGS = {
+          hotUpdateVersion: 0,
+          save: function() {
+            cc.log("SETTING save()");
+          }
+        };
+      };
       NewClass.prototype.onClick = function(event) {
         cc.log(NativeController_1.default.instance.selectPhotoFromAlbum());
       };
