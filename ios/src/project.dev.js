@@ -120,9 +120,9 @@ window.__require = function e(t, n, r) {
             cc.log("Hot update is only available in Native build ,now is not ");
             return;
           }
-          this._localVersion = "105";
+          this._localVersion = window.localVersion;
           this.updateResource();
-          this.handleManifestFile("http://127.0.0.1:3000/hotupdate/ios/");
+          this.handleManifestFile("http://miyariapps.com/testgame/ios/");
           this.checkUpdate();
         } catch (e) {
           cc.log(e);
